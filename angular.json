@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "entregas-front:build"
+            "browserTarget": "entregas-front:build",
+            "port": 9055
           },
           "configurations": {
             "production": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "entregas-front"
+    }
+  },
+  "defaultProject": "entregas-front",
+  "cli": {
+    "analytics": false
+  }
 }
